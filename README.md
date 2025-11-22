@@ -23,10 +23,6 @@ An AI-powered customer support agent system that can retrieve ticket details fro
 
 1. **Clone the repository** (or navigate to the project directory)
 
-```bash
-cd Customer_Support_Agentic_Systems
-```
-
 2. **Create a virtual environment** (recommended)
 
 ```bash

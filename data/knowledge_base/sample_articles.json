@@ -1,0 +1,19 @@
+[
+  {
+    "id": "KB-1",
+    "title": "How to Reset Your Password",
+    "content": "To reset your password, go to the login page and click 'Forgot Password'. Enter your email address and check your inbox for a password reset link. Click the link and follow the instructions to create a new password. Make sure your new password is at least 8 characters long and contains a mix of letters, numbers, and special characters.",
+    "category": "authentication",
+    "tags": ["password", "login", "reset", "authentication"],
+    "keywords": ["password", "reset", "login", "forgot", "email", "authentication"]
+  },
+  {
+    "id": "KB-2",
+    "title": "Troubleshooting Login Issues",
+    "content": "If you're experiencing login issues, first check that you're using the correct username and password. Clear your browser cache and cookies, then try again. If the problem persists, ensure your account is not locked. Try using incognito mode or a different browser. Contact support if issues continue after these steps.",
+    "category": "authentication",
+    "tags": ["login", "troubleshooting", "error", "authentication"],
+    "keywords": ["login", "issue", "error", "troubleshoot", "password", "username", "cache", "cookies"]
+  }
+]
+

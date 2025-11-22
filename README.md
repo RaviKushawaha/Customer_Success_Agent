@@ -43,11 +43,8 @@ pip install -r requirements.txt
 
 4. **Set up environment variables**
 
-Copy `.env.example` to `.env` and configure your settings:
+Copy the following to `.env` and configure your settings:
 
-```bash
-cp .env.example .env
-```
 
 Edit `.env` with your configuration:
 

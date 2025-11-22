@@ -306,28 +306,6 @@ Extend `KnowledgeBase` to connect to external knowledge sources (databases, APIs
 - Run `pip install -r requirements.txt`
 - Check Python version (3.8+)
 
-## Testing
-
-Run tests (if available):
-
-```bash
-pytest tests/
-```
-
-## Contributing
-
-1. Follow the existing code structure and conventions
-2. Add appropriate logging
-3. Update documentation
-4. Test your changes
-
-## License
-
-This project is provided as-is for interview/assessment purposes.
-
-## Support
-
-For issues or questions, please refer to the code comments or contact the development team.
 
 ---
 

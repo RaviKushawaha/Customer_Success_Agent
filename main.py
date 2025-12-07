@@ -3,12 +3,24 @@ Main entry point for Customer Support Agent
 Example usage and demo script
 """
 
+import time
+import sys
+
 from src.agent import CustomerSupportAgent
 from src.knowledge_base import KnowledgeBase
 from src.ticket_system import TicketRetriever
 from src.utils.logger import setup_logger
 
 logger = setup_logger("Main")
+
+
+def type_text(text: str, delay: float = 0.03) -> None:
+    """Print text with a typing effect"""
+    for char in text:
+        sys.stdout.write(char)
+        sys.stdout.flush()
+        time.sleep(delay)
+    print()  # New line after typing
 
 
 def initialize_sample_knowledge_base(kb: KnowledgeBase) -> None:
@@ -133,14 +145,19 @@ def demo_queries() -> None:
     """Run demo queries to showcase the agent's capabilities"""
     
     print("\n" + "="*60)
-    print("Customer Support Agent - Demo Mode")
+    type_text("Customer Support Agent - Demo Mode", delay=0.05)
     print("="*60 + "\n")
+    time.sleep(0.5)
     
     # Initialize agent
+    type_text("Initializing agent...", delay=0.05)
+    time.sleep(0.8)
     kb = KnowledgeBase()
     initialize_sample_knowledge_base(kb)
     ticket_retriever = TicketRetriever()
     agent = CustomerSupportAgent(knowledge_base=kb, ticket_retriever=ticket_retriever)
+    type_text("Agent ready!\n", delay=0.05)
+    time.sleep(0.5)
     
     # Demo queries
     demo_queries_list = [
@@ -153,19 +170,31 @@ def demo_queries() -> None:
     
     for idx, query in enumerate(demo_queries_list, 1):
         print(f"\n{'='*60}")
-        print(f"Demo Query {idx}: {query}")
+        type_text(f"Demo Query {idx}: {query}", delay=0.03)
         print('='*60)
+        time.sleep(0.8)
+        
+        type_text("\nProcessing query...", delay=0.05)
+        time.sleep(1.0)
         
         response_data = agent.process_query(query)
         
-        print(f"\nResponse:\n{response_data['response']}")
-        print(f"\nSources found: {len(response_data['sources'])}")
+        type_text("\nResponse:", delay=0.05)
+        time.sleep(0.3)
+        type_text(response_data['response'], delay=0.02)
+        
+        time.sleep(0.5)
+        type_text(f"\nSources found: {len(response_data['sources'])}", delay=0.05)
+        time.sleep(0.3)
         for source in response_data['sources']:
-            print(f"  - {source['type']}: {source.get('title', source.get('id', ''))}")
+            source_text = f"  - {source['type']}: {source.get('title', source.get('id', ''))}"
+            type_text(source_text, delay=0.03)
         
         print("\n" + "-"*60)
+        time.sleep(1.2)
     
-    print("\nDemo completed!\n")
+    time.sleep(0.5)
+    type_text("\nDemo completed!\n", delay=0.05)
 
 
 def main():

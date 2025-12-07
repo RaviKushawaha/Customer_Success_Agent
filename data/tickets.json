@@ -1,0 +1,56 @@
+[
+  {
+    "id": "PROJ-1001",
+    "title": "Unable to login to application",
+    "description": "User is experiencing login issues with error message 'Invalid credentials'",
+    "status": "Open",
+    "priority": "High",
+    "assignee": "support-team",
+    "reporter": "customer@example.com",
+    "created_date": "2024-01-15T10:30:00Z",
+    "updated_date": "2024-01-15T14:20:00Z",
+    "comments": [
+      {
+        "author": "support-team",
+        "body": "Please check if you're using the correct password",
+        "created_date": "2024-01-15T11:00:00Z"
+      }
+    ]
+  },
+  {
+    "id": "PROJ-1002",
+    "title": "Feature request: Add dark mode",
+    "description": "Customer requests dark mode theme for better visibility",
+    "status": "In Progress",
+    "priority": "Medium",
+    "assignee": "dev-team",
+    "reporter": "user@example.com",
+    "created_date": "2024-01-14T09:15:00Z",
+    "updated_date": "2024-01-16T08:45:00Z",
+    "comments": [
+      {
+        "author": "dev-team",
+        "body": "Dark mode is planned for Q2 release",
+        "created_date": "2024-01-14T16:30:00Z"
+      }
+    ]
+  },
+  {
+    "id": "PROJ-1003",
+    "title": "Payment processing error",
+    "description": "Transaction failed with error code 500. Customer unable to complete purchase.",
+    "status": "Resolved",
+    "priority": "Critical",
+    "assignee": "payment-team",
+    "reporter": "merchant@example.com",
+    "created_date": "2024-01-13T15:20:00Z",
+    "updated_date": "2024-01-14T10:10:00Z",
+    "comments": [
+      {
+        "author": "payment-team",
+        "body": "Issue resolved. Was a temporary service outage.",
+        "created_date": "2024-01-14T10:10:00Z"
+      }
+    ]
+  }
+]
